@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rfM-yU-XGg">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="JobPlanet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="기업, 채용공고 검색" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-5e-QA2">
+                                <rect key="frame" x="0.0" y="91" width="390" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="3AY-wn-Ow8"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="QZn-Lq-9Re"/>
+                                </connections>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJH-3a-GrH">
+                                <rect key="frame" x="0.0" y="142" width="390" height="1"/>
+                                <color key="backgroundColor" name="green"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="mhC-Yl-GcG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RJH-3a-GrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ELC-DT-MqR"/>
+                            <constraint firstItem="RJH-3a-GrH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Eas-0L-oGG"/>
+                            <constraint firstItem="uoy-5e-QA2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tnn-YZ-Qg4"/>
+                            <constraint firstItem="RJH-3a-GrH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fFN-fP-W9X"/>
+                            <constraint firstItem="uoy-5e-QA2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hHR-yd-cwX"/>
+                            <constraint firstItem="uoy-5e-QA2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iWq-D5-ZeY"/>
+                            <constraint firstItem="RJH-3a-GrH" firstAttribute="bottom" secondItem="uoy-5e-QA2" secondAttribute="bottom" id="s4X-Pp-UKU"/>
+                            <constraint firstItem="RJH-3a-GrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vzK-BC-W6c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hmu-Xp-tRs"/>
+                    <connections>
+                        <outlet property="searchBar" destination="uoy-5e-QA2" id="hhd-mr-4u2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70.769230769230774" y="3.5545023696682461"/>
+        </scene>
+        <!--Company View Controller-->
+        <scene sceneID="9iJ-GW-kKo">
+            <objects>
+                <viewController storyboardIdentifier="CompanyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FyN-BA-lr5" customClass="CompanyViewController" customModule="JobPlanet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxK-eA-fiw">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PMO-8v-WjP">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4M5-3P-itu">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="companyCell" id="BFs-xM-vxV" customClass="CollectionViewCell" customModule="JobPlanet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GJT-mR-boN">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yi0-ii-Acg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PMO-8v-WjP" firstAttribute="leading" secondItem="yi0-ii-Acg" secondAttribute="leading" id="ZJB-9b-cuJ"/>
+                            <constraint firstItem="yi0-ii-Acg" firstAttribute="trailing" secondItem="PMO-8v-WjP" secondAttribute="trailing" id="afx-Yg-HaB"/>
+                            <constraint firstItem="yi0-ii-Acg" firstAttribute="bottom" secondItem="PMO-8v-WjP" secondAttribute="bottom" id="cfn-aB-bUj"/>
+                            <constraint firstItem="PMO-8v-WjP" firstAttribute="top" secondItem="yi0-ii-Acg" secondAttribute="top" id="dl1-t4-84G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jobCollectionView" destination="PMO-8v-WjP" id="fCU-Dg-TVM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJI-2q-GK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="99p-PP-59E">
+            <objects>
+                <navigationController id="rfM-yU-XGg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="86H-g1-B40">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="etM-qZ-Fy5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TB8-5a-z9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="9"/>
+        </scene>
+        <!--Recruit Detail View Controller-->
+        <scene sceneID="qFe-7e-XBZ">
+            <objects>
+                <viewController storyboardIdentifier="RecruitDetailViewController" id="lZ6-3x-6wD" customClass="RecruitDetailViewController" customModule="JobPlanet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ff-PT-rzO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dsi-0I-4Ak">
+                                <rect key="frame" x="20" y="97" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="EBD-Y9-TGe"/>
+                                    <constraint firstAttribute="width" constant="80" id="e7V-Uz-WBI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[프로덕트팀] 스페이스워크 UX/UI 디자이너 디자이너" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9u-yO-QEZ">
+                                <rect key="frame" x="116" y="97" width="254" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Vsd-Du-h1B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(주)픽소" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMg-mM-oLf">
+                                <rect key="frame" x="116.00000000000001" y="157" width="48.666666666666671" height="18"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-3D-eo7">
+                                <rect key="frame" x="176.66666666666666" y="157" width="1" height="20"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="1ds-tf-Kur"/>
+                                    <constraint firstAttribute="height" constant="20" id="Hzx-tQ-Wns"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqw-pe-0ac">
+                                <rect key="frame" x="193" y="157" width="26" height="18"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WOY-rZ-gHR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gMg-mM-oLf" firstAttribute="leading" secondItem="v9u-yO-QEZ" secondAttribute="leading" id="0ua-2C-Tw3"/>
+                            <constraint firstItem="gMg-mM-oLf" firstAttribute="top" secondItem="v9u-yO-QEZ" secondAttribute="bottom" constant="12" id="3rT-Ka-3lt"/>
+                            <constraint firstItem="WOY-rZ-gHR" firstAttribute="trailing" secondItem="Zqw-pe-0ac" secondAttribute="trailing" constant="171" id="6fZ-1M-jjO"/>
+                            <constraint firstItem="Zqw-pe-0ac" firstAttribute="baseline" secondItem="gMg-mM-oLf" secondAttribute="baseline" id="ATX-bk-Ug3"/>
+                            <constraint firstItem="v9u-yO-QEZ" firstAttribute="top" secondItem="Dsi-0I-4Ak" secondAttribute="top" id="JvS-IL-TYy"/>
+                            <constraint firstAttribute="trailing" secondItem="v9u-yO-QEZ" secondAttribute="trailing" constant="20" id="TSH-Qe-Dwh"/>
+                            <constraint firstItem="lgh-3D-eo7" firstAttribute="leading" secondItem="gMg-mM-oLf" secondAttribute="trailing" constant="12" id="V8J-jp-bW3"/>
+                            <constraint firstItem="Dsi-0I-4Ak" firstAttribute="leading" secondItem="WOY-rZ-gHR" secondAttribute="leading" constant="20" id="XMg-ER-dz8"/>
+                            <constraint firstItem="lgh-3D-eo7" firstAttribute="top" secondItem="v9u-yO-QEZ" secondAttribute="bottom" constant="12" id="YpU-h0-CZp"/>
+                            <constraint firstItem="Dsi-0I-4Ak" firstAttribute="top" secondItem="WOY-rZ-gHR" secondAttribute="top" constant="50" id="bE9-oz-yXa"/>
+                            <constraint firstItem="Zqw-pe-0ac" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lgh-3D-eo7" secondAttribute="trailing" constant="8" symbolic="YES" id="i17-Kq-Om3"/>
+                            <constraint firstItem="v9u-yO-QEZ" firstAttribute="leading" secondItem="Dsi-0I-4Ak" secondAttribute="trailing" constant="16" id="p3w-UA-tbQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recruitImageView" destination="Dsi-0I-4Ak" id="zrL-KV-rx6"/>
+                        <outlet property="recruitTitle" destination="v9u-yO-QEZ" id="7Ah-IS-2BI"/>
+                        <outlet property="recruiteCompany" destination="gMg-mM-oLf" id="kDO-NR-zps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qM-xK-uKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870.76923076923072" y="713.74407582938386"/>
+        </scene>
+        <!--Recruit View Controller-->
+        <scene sceneID="b0i-aE-JGP">
+            <objects>
+                <viewController storyboardIdentifier="RecruitViewController" id="7OX-rE-EEe" customClass="RecruitViewController" customModule="JobPlanet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9hF-qC-3M4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e1f-fY-4r8">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvc" rowHeight="377" id="OSL-Ft-eel" customClass="RecruitSectionTableViewCell" customModule="JobPlanet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="377"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OSL-Ft-eel" id="bj9-LY-Obu">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="377"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="tvc"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E5U-bQ-jh9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e1f-fY-4r8" firstAttribute="top" secondItem="E5U-bQ-jh9" secondAttribute="top" id="10u-wG-lbq"/>
+                            <constraint firstItem="e1f-fY-4r8" firstAttribute="bottom" secondItem="E5U-bQ-jh9" secondAttribute="bottom" id="6GX-gr-Mg6"/>
+                            <constraint firstItem="e1f-fY-4r8" firstAttribute="trailing" secondItem="E5U-bQ-jh9" secondAttribute="trailing" id="APV-cx-hzq"/>
+                            <constraint firstItem="e1f-fY-4r8" firstAttribute="leading" secondItem="E5U-bQ-jh9" secondAttribute="leading" id="LmR-Fa-qQg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recruiteTableView" destination="e1f-fY-4r8" id="Jeh-Rm-HIY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ief-IW-10L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="green">
+            <color red="0.0" green="0.76499998569488525" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
