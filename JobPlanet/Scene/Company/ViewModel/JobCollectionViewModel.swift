@@ -12,11 +12,7 @@ import RxRelay
 class JobCollectionViewModel {
 
     let disposeBag = DisposeBag()
-    var storeData: [CellList] = [] {
-        didSet {
-            makeCompanyList()
-        }
-    }
+    var storeData: [CellList] = []
     
     var companyList: [CompanyCell] = []
     
@@ -30,11 +26,5 @@ class JobCollectionViewModel {
         }
     }
     
-    func makeCompanyList() {
-//        for i in storeData {
-//            if i.cellName == "CELL_TYPE_COMPANY" {
-//                companyList.append(i as! CompanyCell)
-//            }
-//        }
-    }
+
 }

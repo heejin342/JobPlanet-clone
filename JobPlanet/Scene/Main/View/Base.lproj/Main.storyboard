@@ -203,33 +203,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e1f-fY-4r8">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2oZ-jf-gmm">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvc" rowHeight="377" id="OSL-Ft-eel" customClass="RecruitSectionTableViewCell" customModule="JobPlanet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="377"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OSL-Ft-eel" id="bj9-LY-Obu">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="377"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Tq-JL-eeR">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell" reuseIdentifier="CollectionViewCell" id="8cq-z1-1I9" customClass="CollectionViewCell" customModule="JobPlanet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SmR-a0-Nh5">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <accessibility key="accessibilityConfiguration" identifier="tvc"/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E5U-bQ-jh9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="e1f-fY-4r8" firstAttribute="top" secondItem="E5U-bQ-jh9" secondAttribute="top" id="10u-wG-lbq"/>
-                            <constraint firstItem="e1f-fY-4r8" firstAttribute="bottom" secondItem="E5U-bQ-jh9" secondAttribute="bottom" id="6GX-gr-Mg6"/>
-                            <constraint firstItem="e1f-fY-4r8" firstAttribute="trailing" secondItem="E5U-bQ-jh9" secondAttribute="trailing" id="APV-cx-hzq"/>
-                            <constraint firstItem="e1f-fY-4r8" firstAttribute="leading" secondItem="E5U-bQ-jh9" secondAttribute="leading" id="LmR-Fa-qQg"/>
+                            <constraint firstItem="2oZ-jf-gmm" firstAttribute="leading" secondItem="E5U-bQ-jh9" secondAttribute="leading" id="5wa-vl-Hye"/>
+                            <constraint firstItem="2oZ-jf-gmm" firstAttribute="top" secondItem="E5U-bQ-jh9" secondAttribute="top" id="FhO-73-lil"/>
+                            <constraint firstItem="E5U-bQ-jh9" firstAttribute="trailing" secondItem="2oZ-jf-gmm" secondAttribute="trailing" id="PWi-t2-Xy0"/>
+                            <constraint firstItem="E5U-bQ-jh9" firstAttribute="bottom" secondItem="2oZ-jf-gmm" secondAttribute="bottom" id="kHl-Vi-HvD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="recruiteTableView" destination="e1f-fY-4r8" id="Jeh-Rm-HIY"/>
+                        <outlet property="recruitCollectionView" destination="2oZ-jf-gmm" id="VQt-F4-4SM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ief-IW-10L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

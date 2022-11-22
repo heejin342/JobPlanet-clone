@@ -13,8 +13,7 @@
 		F07411032929BB0E0086B75E /* CompanyViewController+CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07411022929BB0E0086B75E /* CompanyViewController+CollectionViewExtension.swift */; };
 		F07411092929E7D40086B75E /* RecruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07411082929E7D40086B75E /* RecruitViewController.swift */; };
 		F074110F2929F6050086B75E /* TabButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F074110E2929F6050086B75E /* TabButtonType.swift */; };
-		F07411132929FA180086B75E /* UIViewControlle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07411122929FA180086B75E /* UIViewControlle+Extension.swift */; };
-		F07411152929FCF00086B75E /* RecruitSectionTableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07411142929FCEF0086B75E /* RecruitSectionTableView+Extension.swift */; };
+		F07411132929FA180086B75E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07411122929FA180086B75E /* UIViewController+Extension.swift */; };
 		F0741118292A22000086B75E /* RecruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0741117292A22000086B75E /* RecruitViewModel.swift */; };
 		F074111B292A22180086B75E /* RecruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F074111A292A22180086B75E /* RecruitModel.swift */; };
 		F0826494292524CD0080C5AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0826493292524CD0080C5AF /* AppDelegate.swift */; };
@@ -25,12 +24,12 @@
 		F08264A0292524CF0080C5AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F082649E292524CF0080C5AF /* LaunchScreen.storyboard */; };
 		F08264A929252BB10080C5AF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08264A729252BB10080C5AF /* CollectionViewCell.swift */; };
 		F08264AA29252BB10080C5AF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08264A829252BB10080C5AF /* CollectionViewCell.xib */; };
-		F08264AD29252F680080C5AF /* RecruitSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08264AB29252F680080C5AF /* RecruitSectionTableViewCell.swift */; };
-		F08264AE29252F680080C5AF /* RecruitSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08264AC29252F680080C5AF /* RecruitSectionTableViewCell.xib */; };
 		F08264B52927CD130080C5AF /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08264B42927CD130080C5AF /* CellModel.swift */; };
 		F08D3377292A79D1001247FD /* RecruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3376292A79D1001247FD /* RecruitDetailViewController.swift */; };
 		F08D3379292BAC20001247FD /* HashTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3378292BAC20001247FD /* HashTagView.swift */; };
 		F08D337B292BC74E001247FD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D337A292BC74E001247FD /* String+Extension.swift */; };
+		F08D3382292CDD9D001247FD /* JobPlanetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3381292CDD9D001247FD /* JobPlanetKey.swift */; };
+		F08D3385292CEFE7001247FD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3384292CEFE7001247FD /* MainViewModel.swift */; };
 		F0B926282928C5FA005D75F2 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */; };
 		F0B9262B2928C8CB005D75F2 /* TabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B926292928C8CB005D75F2 /* TabHeaderView.swift */; };
 		F0B9262C2928C8CB005D75F2 /* TabHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0B9262A2928C8CB005D75F2 /* TabHeaderView.xib */; };
@@ -53,8 +52,7 @@
 		F07411022929BB0E0086B75E /* CompanyViewController+CollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CompanyViewController+CollectionViewExtension.swift"; sourceTree = "<group>"; };
 		F07411082929E7D40086B75E /* RecruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitViewController.swift; sourceTree = "<group>"; };
 		F074110E2929F6050086B75E /* TabButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonType.swift; sourceTree = "<group>"; };
-		F07411122929FA180086B75E /* UIViewControlle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControlle+Extension.swift"; sourceTree = "<group>"; };
-		F07411142929FCEF0086B75E /* RecruitSectionTableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecruitSectionTableView+Extension.swift"; sourceTree = "<group>"; };
+		F07411122929FA180086B75E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F0741117292A22000086B75E /* RecruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitViewModel.swift; sourceTree = "<group>"; };
 		F074111A292A22180086B75E /* RecruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitModel.swift; sourceTree = "<group>"; };
 		F0826490292524CD0080C5AF /* JobPlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobPlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,12 +65,12 @@
 		F08264A1292524CF0080C5AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F08264A729252BB10080C5AF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F08264A829252BB10080C5AF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		F08264AB29252F680080C5AF /* RecruitSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitSectionTableViewCell.swift; sourceTree = "<group>"; };
-		F08264AC29252F680080C5AF /* RecruitSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecruitSectionTableViewCell.xib; sourceTree = "<group>"; };
 		F08264B42927CD130080C5AF /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		F08D3376292A79D1001247FD /* RecruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitDetailViewController.swift; sourceTree = "<group>"; };
 		F08D3378292BAC20001247FD /* HashTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagView.swift; sourceTree = "<group>"; };
 		F08D337A292BC74E001247FD /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F08D3381292CDD9D001247FD /* JobPlanetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPlanetKey.swift; sourceTree = "<group>"; };
+		F08D3384292CEFE7001247FD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		F0B926292928C8CB005D75F2 /* TabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHeaderView.swift; sourceTree = "<group>"; };
 		F0B9262A2928C8CB005D75F2 /* TabHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabHeaderView.xib; sourceTree = "<group>"; };
@@ -126,6 +124,7 @@
 		F07410FE29293DED0086B75E /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				F08D3380292CDD8A001247FD /* APIKey */,
 				F07410FF29293E170086B75E /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
@@ -134,6 +133,7 @@
 		F07411042929BBF10086B75E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F08D3383292CEFD8001247FD /* ViewModel */,
 				F074110D2929F5E60086B75E /* Model */,
 				F074110C2929F52A0086B75E /* View */,
 			);
@@ -192,9 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				F07411082929E7D40086B75E /* RecruitViewController.swift */,
-				F08264AB29252F680080C5AF /* RecruitSectionTableViewCell.swift */,
-				F08264AC29252F680080C5AF /* RecruitSectionTableViewCell.xib */,
-				F07411142929FCEF0086B75E /* RecruitSectionTableView+Extension.swift */,
 				F08264A729252BB10080C5AF /* CollectionViewCell.swift */,
 				F08264A829252BB10080C5AF /* CollectionViewCell.xib */,
 			);
@@ -264,12 +261,28 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		F08D3380292CDD8A001247FD /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+				F08D3381292CDD9D001247FD /* JobPlanetKey.swift */,
+			);
+			path = APIKey;
+			sourceTree = "<group>";
+		};
+		F08D3383292CEFD8001247FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F08D3384292CEFE7001247FD /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F0B926262928C5E1005D75F2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */,
 				F0B926382928E5A0005D75F2 /* UIColor+Extension.swift */,
-				F07411122929FA180086B75E /* UIViewControlle+Extension.swift */,
+				F07411122929FA180086B75E /* UIViewController+Extension.swift */,
 				F08D337A292BC74E001247FD /* String+Extension.swift */,
 			);
 			path = Extension;
@@ -374,7 +387,6 @@
 				F0B926372928E418005D75F2 /* CompanyCollectionViewCell.xib in Resources */,
 				F08264A0292524CF0080C5AF /* LaunchScreen.storyboard in Resources */,
 				F0B9262C2928C8CB005D75F2 /* TabHeaderView.xib in Resources */,
-				F08264AE29252F680080C5AF /* RecruitSectionTableViewCell.xib in Resources */,
 				F0C1042929292C630052C886 /* HorizontalCollectionViewCell.xib in Resources */,
 				F082649D292524CF0080C5AF /* Assets.xcassets in Resources */,
 				F08264AA29252BB10080C5AF /* CollectionViewCell.xib in Resources */,
@@ -432,13 +444,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F07411152929FCF00086B75E /* RecruitSectionTableView+Extension.swift in Sources */,
 				F0B9262B2928C8CB005D75F2 /* TabHeaderView.swift in Sources */,
-				F08264AD29252F680080C5AF /* RecruitSectionTableViewCell.swift in Sources */,
 				F0B926362928E418005D75F2 /* CompanyCollectionViewCell.swift in Sources */,
 				F07411092929E7D40086B75E /* RecruitViewController.swift in Sources */,
 				F07411032929BB0E0086B75E /* CompanyViewController+CollectionViewExtension.swift in Sources */,
 				F0B926392928E5A0005D75F2 /* UIColor+Extension.swift in Sources */,
+				F08D3385292CEFE7001247FD /* MainViewModel.swift in Sources */,
 				F08D3379292BAC20001247FD /* HashTagView.swift in Sources */,
 				F08D337B292BC74E001247FD /* String+Extension.swift in Sources */,
 				F0B926282928C5FA005D75F2 /* NSObject+Extension.swift in Sources */,
@@ -447,13 +458,14 @@
 				F0826498292524CD0080C5AF /* MainViewController.swift in Sources */,
 				F07410FC29293D210086B75E /* JobCollectionViewModel.swift in Sources */,
 				F0826494292524CD0080C5AF /* AppDelegate.swift in Sources */,
+				F08D3382292CDD9D001247FD /* JobPlanetKey.swift in Sources */,
 				F0C1042C29292F100052C886 /* ReviewCollectionViewCell.swift in Sources */,
 				F074110F2929F6050086B75E /* TabButtonType.swift in Sources */,
 				F08264B52927CD130080C5AF /* CellModel.swift in Sources */,
 				F08264A929252BB10080C5AF /* CollectionViewCell.swift in Sources */,
 				F08D3377292A79D1001247FD /* RecruitDetailViewController.swift in Sources */,
 				F0B9262E2928CDF7005D75F2 /* CompanyViewController.swift in Sources */,
-				F07411132929FA180086B75E /* UIViewControlle+Extension.swift in Sources */,
+				F07411132929FA180086B75E /* UIViewController+Extension.swift in Sources */,
 				F0C1042829292C630052C886 /* HorizontalCollectionViewCell.swift in Sources */,
 				F074111B292A22180086B75E /* RecruitModel.swift in Sources */,
 				F0826496292524CD0080C5AF /* SceneDelegate.swift in Sources */,

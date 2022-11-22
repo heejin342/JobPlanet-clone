@@ -45,9 +45,3 @@ final class HashTagView: UIView {
         }
     }
 }
-
-// 검색, 통신 에러처리 -> 팝업extension, identifier extension
-// MVVM
-// 스택뷰 오토 사이징
-// 테이블 뷰 아래 데이터 넣기
-// 검색 결과 없을때 화면

@@ -8,16 +8,17 @@
 import Alamofire
 
 enum APIError: Error {
-    case parseError
-    case networkError
+    case decodingError
     case serverError
 }
 
-struct APIConstants {
-    static let BASE_URL = "https://jpassets.jobplanet.co.kr/mobile-config"
-    
-    static let DYNAMIC_CELL_ITEMS = "/test_data_cell_items.json"
-    static let RECRUITE_ITEMS = "/test_data_recruit_items.json"
+extension APIError {
+    var errorMsg: String {
+        switch self {
+        case .decodingError: return "올바르지 않는 형식입니다. 관리자에게 문의해주세요"
+        case .serverError: return "네트워크 오류가 발생했습니다. 잠시후 다시시도 해주세요"
+        }
+    }
 }
 
 final class NetworkManager<T: Decodable> {
@@ -25,7 +26,7 @@ final class NetworkManager<T: Decodable> {
     var method: HTTPMethod
 
     init(url: String, method: HTTPMethod) {
-        self.fetchURL = APIConstants.BASE_URL + url
+        self.fetchURL = JobPlanetKey.BASE_URL + url
         self.method = method
     }
     

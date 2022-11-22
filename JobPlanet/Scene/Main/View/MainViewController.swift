@@ -17,6 +17,7 @@ protocol CellAction {
 class MainViewController: UIViewController, CellAction {
     
     @IBOutlet var searchBar: UISearchBar!
+    let viewModel = MainViewModel()
     
     var recruiteView: RecruitViewController?
     var recruiteViewModel = RecruitViewModel()
@@ -94,7 +95,7 @@ class MainViewController: UIViewController, CellAction {
     func moveDetail(data: RecruitList) {
         view.endEditing(true)
 
-        guard let vc = instanceVC(name: "RecruitDetailViewController") as? RecruitDetailViewController else { return }
+        guard let vc = instanceVC(name: RecruitDetailViewController.Id) as? RecruitDetailViewController else { return }
         vc.data = data
         self.navigationController?.pushViewController(vc, animated: true)
     }
