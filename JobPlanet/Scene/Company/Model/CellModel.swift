@@ -78,24 +78,7 @@ struct CompanyCell: Decodable {
         case interviewQuestion = "interview_question"
         case salaryAvg = "salary_avg"
         case updateDate = "update_date"
-    }
-    
-//    init(from decoder: Decoder) throws {
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//        self.cellType = try container.decode(String.self, forKey: .cellType)
-//        self.logoPath = try container.decode(String.self, forKey: .logoPath)
-//        self.name = try container.decode(String.self, forKey: .name)
-//        self.industryName = try container.decode(String.self, forKey: .industryName)
-//        self.rateTotalAvg = try container.decode(Double.self, forKey: .rateTotalAvg)
-//        self.reviewSummary = try container.decode(String.self, forKey: .reviewSummary)
-//        self.interviewQuestion = try container.decode(String.self, forKey: .interviewQuestion)
-//        self.salaryAvg = try container.decode(Int.self, forKey: .salaryAvg)
-//        self.updateDate = try container.decode(String.self, forKey: .updateDate)
-//    }
-    
-//    func initsdf() -> Self {
-//        return CompanyCell(cellType: "sf", logoPath: "sdf", name: "sdf", industryName: "sdf", rateTotalAvg: 0.0, reviewSummary: "sdf", interviewQuestion: "sdf", salaryAvg: 1, updateDate: "sdf")
-//    }
+    }    
 }
 
 struct HorizontalCell: Decodable {

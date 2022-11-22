@@ -11,7 +11,7 @@ import RxCocoa
 
 class CompanyViewController: UIViewController {
 
-    var viewModel: JobCollectionViewModel?
+    var viewModel: CompanyCollectionViewModel?
     let disposeBag = DisposeBag()
     var transitionDelagate: CellAction?
     @IBOutlet var jobCollectionView: UICollectionView!

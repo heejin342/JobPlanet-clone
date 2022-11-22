@@ -7,18 +7,18 @@
 
 import UIKit
 
-class TabHeaderView: UICollectionReusableView {
+final class TabHeaderView: UICollectionReusableView {
     
     @IBOutlet weak var recruitButton: UIButton!
     @IBOutlet weak var companyButton: UIButton!
     
-    var buttonTapped: ((Int) -> Void)?
+    var buttonTapped: ((TabButtonType) -> Void)?
         
     @IBAction func tab(_ sender: UIButton) {
         if sender == recruitButton {
-            self.buttonTapped?(TabButtonType.recruit.rawValue)
+            self.buttonTapped?(TabButtonType.recruit)
         } else {
-            self.buttonTapped?(TabButtonType.company.rawValue)
+            self.buttonTapped?(TabButtonType.company)
         }
     }
     

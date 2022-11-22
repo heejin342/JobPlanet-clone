@@ -1,5 +1,5 @@
 //
-//  JobCollectionViewModel.swift
+//  CompanyCollectionViewModel.swift
 //  JobPlanet
 //
 //  Created by 김희진 on 2022/11/20.
@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxRelay
 
-class JobCollectionViewModel {
+class CompanyCollectionViewModel {
 
     let disposeBag = DisposeBag()
     var storeData: [CellList] = []

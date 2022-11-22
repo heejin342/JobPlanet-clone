@@ -22,8 +22,8 @@ class HorizontalCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
-        horizontalCompanyCollectionVIew.register(nib, forCellWithReuseIdentifier: "cvc")
+        let nib = UINib(nibName: RecuitCollectionViewCell.Id, bundle: nil)
+        horizontalCompanyCollectionVIew.register(nib, forCellWithReuseIdentifier: RecuitCollectionViewCell.Id)
         
         horizontalCompanyCollectionVIew.delegate = self
         horizontalCompanyCollectionVIew.dataSource = self
@@ -54,7 +54,7 @@ extension HorizontalCollectionViewCell: UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cvc", for: indexPath) as? CollectionViewCell else{
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecuitCollectionViewCell.Id, for: indexPath) as? RecuitCollectionViewCell else{
             return UICollectionViewCell()
         }
         

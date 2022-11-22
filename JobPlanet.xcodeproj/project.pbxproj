@@ -22,14 +22,16 @@
 		F082649B292524CD0080C5AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0826499292524CD0080C5AF /* Main.storyboard */; };
 		F082649D292524CF0080C5AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F082649C292524CF0080C5AF /* Assets.xcassets */; };
 		F08264A0292524CF0080C5AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F082649E292524CF0080C5AF /* LaunchScreen.storyboard */; };
-		F08264A929252BB10080C5AF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08264A729252BB10080C5AF /* CollectionViewCell.swift */; };
-		F08264AA29252BB10080C5AF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08264A829252BB10080C5AF /* CollectionViewCell.xib */; };
+		F08264A929252BB10080C5AF /* RecuitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08264A729252BB10080C5AF /* RecuitCollectionViewCell.swift */; };
+		F08264AA29252BB10080C5AF /* RecuitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08264A829252BB10080C5AF /* RecuitCollectionViewCell.xib */; };
 		F08264B52927CD130080C5AF /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08264B42927CD130080C5AF /* CellModel.swift */; };
 		F08D3377292A79D1001247FD /* RecruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3376292A79D1001247FD /* RecruitDetailViewController.swift */; };
 		F08D3379292BAC20001247FD /* HashTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3378292BAC20001247FD /* HashTagView.swift */; };
 		F08D337B292BC74E001247FD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D337A292BC74E001247FD /* String+Extension.swift */; };
 		F08D3382292CDD9D001247FD /* JobPlanetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3381292CDD9D001247FD /* JobPlanetKey.swift */; };
 		F08D3385292CEFE7001247FD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3384292CEFE7001247FD /* MainViewModel.swift */; };
+		F08D3388292CF13F001247FD /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3387292CF13F001247FD /* ErrorModel.swift */; };
+		F08D338C292D0086001247FD /* InsetVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D338B292D0086001247FD /* InsetVariables.swift */; };
 		F0B926282928C5FA005D75F2 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */; };
 		F0B9262B2928C8CB005D75F2 /* TabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B926292928C8CB005D75F2 /* TabHeaderView.swift */; };
 		F0B9262C2928C8CB005D75F2 /* TabHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0B9262A2928C8CB005D75F2 /* TabHeaderView.xib */; };
@@ -63,14 +65,16 @@
 		F082649C292524CF0080C5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F082649F292524CF0080C5AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F08264A1292524CF0080C5AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F08264A729252BB10080C5AF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		F08264A829252BB10080C5AF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		F08264A729252BB10080C5AF /* RecuitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuitCollectionViewCell.swift; sourceTree = "<group>"; };
+		F08264A829252BB10080C5AF /* RecuitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecuitCollectionViewCell.xib; sourceTree = "<group>"; };
 		F08264B42927CD130080C5AF /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		F08D3376292A79D1001247FD /* RecruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitDetailViewController.swift; sourceTree = "<group>"; };
 		F08D3378292BAC20001247FD /* HashTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagView.swift; sourceTree = "<group>"; };
 		F08D337A292BC74E001247FD /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		F08D3381292CDD9D001247FD /* JobPlanetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPlanetKey.swift; sourceTree = "<group>"; };
 		F08D3384292CEFE7001247FD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F08D3387292CF13F001247FD /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		F08D338B292D0086001247FD /* InsetVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetVariables.swift; sourceTree = "<group>"; };
 		F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		F0B926292928C8CB005D75F2 /* TabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHeaderView.swift; sourceTree = "<group>"; };
 		F0B9262A2928C8CB005D75F2 /* TabHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabHeaderView.xib; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		F07410FE29293DED0086B75E /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				F08D3386292CF130001247FD /* ErrorModel */,
 				F08D3380292CDD8A001247FD /* APIKey */,
 				F07410FF29293E170086B75E /* NetworkManager.swift */,
 			);
@@ -156,6 +161,7 @@
 				F082649E292524CF0080C5AF /* LaunchScreen.storyboard */,
 				F082649C292524CF0080C5AF /* Assets.xcassets */,
 				F08D3378292BAC20001247FD /* HashTagView.swift */,
+				F08D338B292D0086001247FD /* InsetVariables.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -192,8 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				F07411082929E7D40086B75E /* RecruitViewController.swift */,
-				F08264A729252BB10080C5AF /* CollectionViewCell.swift */,
-				F08264A829252BB10080C5AF /* CollectionViewCell.xib */,
+				F08264A729252BB10080C5AF /* RecuitCollectionViewCell.swift */,
+				F08264A829252BB10080C5AF /* RecuitCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,9 +241,9 @@
 		F0826492292524CD0080C5AF /* JobPlanet */ = {
 			isa = PBXGroup;
 			children = (
+				F0B926262928C5E1005D75F2 /* Extension */,
 				F07411102929F6450086B75E /* Application */,
 				F074110B2929F4580086B75E /* Resources */,
-				F0B926262928C5E1005D75F2 /* Extension */,
 				F07410FE29293DED0086B75E /* NetworkManager */,
 				F0B926302928D6B8005D75F2 /* Scene */,
 				F08264A1292524CF0080C5AF /* Info.plist */,
@@ -275,6 +281,14 @@
 				F08D3384292CEFE7001247FD /* MainViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F08D3386292CF130001247FD /* ErrorModel */ = {
+			isa = PBXGroup;
+			children = (
+				F08D3387292CF13F001247FD /* ErrorModel.swift */,
+			);
+			path = ErrorModel;
 			sourceTree = "<group>";
 		};
 		F0B926262928C5E1005D75F2 /* Extension */ = {
@@ -389,7 +403,7 @@
 				F0B9262C2928C8CB005D75F2 /* TabHeaderView.xib in Resources */,
 				F0C1042929292C630052C886 /* HorizontalCollectionViewCell.xib in Resources */,
 				F082649D292524CF0080C5AF /* Assets.xcassets in Resources */,
-				F08264AA29252BB10080C5AF /* CollectionViewCell.xib in Resources */,
+				F08264AA29252BB10080C5AF /* RecuitCollectionViewCell.xib in Resources */,
 				F0C1042D29292F100052C886 /* ReviewCollectionViewCell.xib in Resources */,
 				F082649B292524CD0080C5AF /* Main.storyboard in Resources */,
 			);
@@ -462,7 +476,9 @@
 				F0C1042C29292F100052C886 /* ReviewCollectionViewCell.swift in Sources */,
 				F074110F2929F6050086B75E /* TabButtonType.swift in Sources */,
 				F08264B52927CD130080C5AF /* CellModel.swift in Sources */,
-				F08264A929252BB10080C5AF /* CollectionViewCell.swift in Sources */,
+				F08D3388292CF13F001247FD /* ErrorModel.swift in Sources */,
+				F08264A929252BB10080C5AF /* RecuitCollectionViewCell.swift in Sources */,
+				F08D338C292D0086001247FD /* InsetVariables.swift in Sources */,
 				F08D3377292A79D1001247FD /* RecruitDetailViewController.swift in Sources */,
 				F0B9262E2928CDF7005D75F2 /* CompanyViewController.swift in Sources */,
 				F07411132929FA180086B75E /* UIViewController+Extension.swift in Sources */,

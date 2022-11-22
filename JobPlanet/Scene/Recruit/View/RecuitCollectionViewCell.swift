@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.swift
+//  RecuitCollectionViewCell.swift
 //  JobPlanet
 //
 //  Created by 김희진 on 2022/11/16.
@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 import RxSwift
 
-class CollectionViewCell: UICollectionViewCell {
+class RecuitCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var companyLogo: UIImageView!
     @IBOutlet var companyRecruitName: UILabel!
