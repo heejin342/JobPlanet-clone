@@ -52,11 +52,20 @@ class MainViewController: UIViewController {
         searchBar.delegate = self
         searchBar.setImage(UIImage(named: "logoSearch"), for: UISearchBar.Icon.search, state: .normal)
         searchBar.backgroundImage = UIImage()
-        
+                
         if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
+            let toolBarKeyboard = UIToolbar()
+            toolBarKeyboard.sizeToFit()
+            
+            let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+            let btnDoneBar = UIBarButtonItem(title: "취소", style: .done, target: self, action: #selector(doneBtnClicked))
+            toolBarKeyboard.items = [flexibleSpace, btnDoneBar]
+            toolBarKeyboard.tintColor = UIColor.JobPlanet.green
+
             textfield.backgroundColor = UIColor.white
             textfield.attributedPlaceholder = NSAttributedString(string: textfield.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.JobPlanet.gray2])
             textfield.textColor = UIColor.JobPlanet.gray1
+            textfield.inputAccessoryView = toolBarKeyboard
             
             if let leftView = textfield.leftView as? UIImageView {
                 leftView.image = leftView.image?.withRenderingMode(.alwaysTemplate)
@@ -64,6 +73,9 @@ class MainViewController: UIViewController {
         }
     }
     
+    @IBAction func doneBtnClicked(sender: Any) {
+        self.view.endEditing(true)
+    }
     
     /// CellAction protocol
 
