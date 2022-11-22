@@ -30,6 +30,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setSearchBar()
+
+        viewModel.getRecruitdata()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -105,12 +107,11 @@ class MainViewController: UIViewController {
     }
     
     
-    
     /// MakeChildScene protocol
 
     func makeRecruitTab() {
         viewModel.recruiteView = instanceVC(name: RecruitViewController.Id) as? RecruitViewController
-        viewModel.recruiteView?.viewModel = viewModel.recruiteViewModel
+        viewModel.recruiteView?.viewModel = viewModel.recruiteViewModel        
         guard let recruiteView = viewModel.recruiteView else {return}
         recruiteView.transitionDelegate = self
         

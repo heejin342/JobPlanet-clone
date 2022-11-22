@@ -18,13 +18,17 @@ struct MainViewModel {
     var isFirstLoad = true
     
     mutating func filter(filterText: String?) {
-        let filtedData = recruiteViewModel.storeData
+        let filtedData = recruiteViewModel.getTotalData()
             .filter { $0.title.contains(filterText ?? "") ||  $0.company.name.contains(filterText ?? "") }
         
         recruiteViewModel.recruitData.accept(filtedData)
     }
     
     mutating func resetFilter() {
-        recruiteViewModel.recruitData.accept(self.recruiteViewModel.storeData)
+        recruiteViewModel.recruitData.accept(self.recruiteViewModel.getTotalData())
+    }
+    
+    mutating func getRecruitdata() {
+        recruiteViewModel.getRecruitdata()
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Alamofire
+import RxSwift
 
 final class NetworkManager<T: Decodable> {
     var fetchURL: String
@@ -26,8 +27,19 @@ final class NetworkManager<T: Decodable> {
             case .success(let value):
                 completion(value)
             case .failure(let error):
-                print("네트워크 에러2: ", error.localizedDescription)
+                print(error.localizedDescription)
+                print("네트워크 에러2: ", APIError.serverError.errorMsg)
             }
         }
     }
+    
+    func fetchWithRx() -> Observable<T> {
+        return Observable.create { emitter in
+            self.fetch() { result in
+                emitter.onNext(result)
+            }
+            return Disposables.create()
+        }
+    }
+
 }

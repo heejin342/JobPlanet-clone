@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		286EE3325E32396358F57E31 /* Pods_JobPlanet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D200B7DD12E21187D62E6CCA /* Pods_JobPlanet.framework */; };
-		F07410FC29293D210086B75E /* JobCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07410FB29293D210086B75E /* JobCollectionViewModel.swift */; };
+		F07410FC29293D210086B75E /* CompanyCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07410FB29293D210086B75E /* CompanyCollectionViewModel.swift */; };
 		F074110029293E170086B75E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07410FF29293E170086B75E /* NetworkManager.swift */; };
 		F07411032929BB0E0086B75E /* CompanyViewController+CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07411022929BB0E0086B75E /* CompanyViewController+CollectionViewExtension.swift */; };
 		F07411092929E7D40086B75E /* RecruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07411082929E7D40086B75E /* RecruitViewController.swift */; };
 		F074110F2929F6050086B75E /* TabButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F074110E2929F6050086B75E /* TabButtonType.swift */; };
 		F07411132929FA180086B75E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07411122929FA180086B75E /* UIViewController+Extension.swift */; };
 		F0741118292A22000086B75E /* RecruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0741117292A22000086B75E /* RecruitViewModel.swift */; };
-		F074111B292A22180086B75E /* RecruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F074111A292A22180086B75E /* RecruitModel.swift */; };
+		F074111B292A22180086B75E /* RecruitEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F074111A292A22180086B75E /* RecruitEntity.swift */; };
 		F0826494292524CD0080C5AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0826493292524CD0080C5AF /* AppDelegate.swift */; };
 		F0826496292524CD0080C5AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0826495292524CD0080C5AF /* SceneDelegate.swift */; };
 		F0826498292524CD0080C5AF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0826497292524CD0080C5AF /* MainViewController.swift */; };
@@ -32,6 +32,8 @@
 		F08D3385292CEFE7001247FD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3384292CEFE7001247FD /* MainViewModel.swift */; };
 		F08D3388292CF13F001247FD /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3387292CF13F001247FD /* ErrorModel.swift */; };
 		F08D338C292D0086001247FD /* InsetVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D338B292D0086001247FD /* InsetVariables.swift */; };
+		F08D338E292D15D8001247FD /* RecruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D338D292D15D8001247FD /* RecruitService.swift */; };
+		F08D3392292D1D1B001247FD /* CompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3391292D1D1B001247FD /* CompanyService.swift */; };
 		F0B926282928C5FA005D75F2 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */; };
 		F0B9262B2928C8CB005D75F2 /* TabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B926292928C8CB005D75F2 /* TabHeaderView.swift */; };
 		F0B9262C2928C8CB005D75F2 /* TabHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0B9262A2928C8CB005D75F2 /* TabHeaderView.xib */; };
@@ -49,14 +51,14 @@
 		7BF8D209F0ED98886128B63C /* Pods-JobPlanet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobPlanet.release.xcconfig"; path = "Target Support Files/Pods-JobPlanet/Pods-JobPlanet.release.xcconfig"; sourceTree = "<group>"; };
 		86B9582A299B6D8E2FE2A458 /* Pods-JobPlanet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobPlanet.debug.xcconfig"; path = "Target Support Files/Pods-JobPlanet/Pods-JobPlanet.debug.xcconfig"; sourceTree = "<group>"; };
 		D200B7DD12E21187D62E6CCA /* Pods_JobPlanet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobPlanet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F07410FB29293D210086B75E /* JobCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCollectionViewModel.swift; sourceTree = "<group>"; };
+		F07410FB29293D210086B75E /* CompanyCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCollectionViewModel.swift; sourceTree = "<group>"; };
 		F07410FF29293E170086B75E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F07411022929BB0E0086B75E /* CompanyViewController+CollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CompanyViewController+CollectionViewExtension.swift"; sourceTree = "<group>"; };
 		F07411082929E7D40086B75E /* RecruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitViewController.swift; sourceTree = "<group>"; };
 		F074110E2929F6050086B75E /* TabButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonType.swift; sourceTree = "<group>"; };
 		F07411122929FA180086B75E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F0741117292A22000086B75E /* RecruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitViewModel.swift; sourceTree = "<group>"; };
-		F074111A292A22180086B75E /* RecruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitModel.swift; sourceTree = "<group>"; };
+		F074111A292A22180086B75E /* RecruitEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitEntity.swift; sourceTree = "<group>"; };
 		F0826490292524CD0080C5AF /* JobPlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobPlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0826493292524CD0080C5AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0826495292524CD0080C5AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		F08D3384292CEFE7001247FD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F08D3387292CF13F001247FD /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		F08D338B292D0086001247FD /* InsetVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetVariables.swift; sourceTree = "<group>"; };
+		F08D338D292D15D8001247FD /* RecruitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitService.swift; sourceTree = "<group>"; };
+		F08D3391292D1D1B001247FD /* CompanyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyService.swift; sourceTree = "<group>"; };
 		F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		F0B926292928C8CB005D75F2 /* TabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHeaderView.swift; sourceTree = "<group>"; };
 		F0B9262A2928C8CB005D75F2 /* TabHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabHeaderView.xib; sourceTree = "<group>"; };
@@ -120,7 +124,7 @@
 		F07410FD29293D2E0086B75E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F07410FB29293D210086B75E /* JobCollectionViewModel.swift */,
+				F07410FB29293D210086B75E /* CompanyCollectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 		F07411072929E79E0086B75E /* Recruit */ = {
 			isa = PBXGroup;
 			children = (
+				F08D338F292D18AB001247FD /* Service */,
 				F0741119292A22070086B75E /* Model */,
 				F0741116292A21E10086B75E /* ViewModel */,
 				F07411112929F6640086B75E /* View */,
@@ -215,7 +220,7 @@
 		F0741119292A22070086B75E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F074111A292A22180086B75E /* RecruitModel.swift */,
+				F074111A292A22180086B75E /* RecruitEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +296,22 @@
 			path = ErrorModel;
 			sourceTree = "<group>";
 		};
+		F08D338F292D18AB001247FD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F08D338D292D15D8001247FD /* RecruitService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F08D3390292D1D01001247FD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F08D3391292D1D1B001247FD /* CompanyService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		F0B926262928C5E1005D75F2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +326,7 @@
 		F0B9262F2928D6A6005D75F2 /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				F08D3390292D1D01001247FD /* Service */,
 				F07410FD29293D2E0086B75E /* ViewModel */,
 				F08264B32927CD030080C5AF /* Model */,
 				F0B926312928E38C005D75F2 /* View */,
@@ -470,7 +492,7 @@
 				F074110029293E170086B75E /* NetworkManager.swift in Sources */,
 				F0741118292A22000086B75E /* RecruitViewModel.swift in Sources */,
 				F0826498292524CD0080C5AF /* MainViewController.swift in Sources */,
-				F07410FC29293D210086B75E /* JobCollectionViewModel.swift in Sources */,
+				F07410FC29293D210086B75E /* CompanyCollectionViewModel.swift in Sources */,
 				F0826494292524CD0080C5AF /* AppDelegate.swift in Sources */,
 				F08D3382292CDD9D001247FD /* JobPlanetKey.swift in Sources */,
 				F0C1042C29292F100052C886 /* ReviewCollectionViewCell.swift in Sources */,
@@ -480,10 +502,12 @@
 				F08264A929252BB10080C5AF /* RecuitCollectionViewCell.swift in Sources */,
 				F08D338C292D0086001247FD /* InsetVariables.swift in Sources */,
 				F08D3377292A79D1001247FD /* RecruitDetailViewController.swift in Sources */,
+				F08D3392292D1D1B001247FD /* CompanyService.swift in Sources */,
 				F0B9262E2928CDF7005D75F2 /* CompanyViewController.swift in Sources */,
 				F07411132929FA180086B75E /* UIViewController+Extension.swift in Sources */,
 				F0C1042829292C630052C886 /* HorizontalCollectionViewCell.swift in Sources */,
-				F074111B292A22180086B75E /* RecruitModel.swift in Sources */,
+				F074111B292A22180086B75E /* RecruitEntity.swift in Sources */,
+				F08D338E292D15D8001247FD /* RecruitService.swift in Sources */,
 				F0826496292524CD0080C5AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
