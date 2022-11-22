@@ -23,6 +23,8 @@ class CompanyCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var intervewQuestion: UILabel!
     
+    let formatter = DateFormatter()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -30,6 +32,7 @@ class CompanyCollectionViewCell: UICollectionViewCell {
         companyLogo.layer.cornerRadius = 4
         companyLogo.layer.borderWidth = 1
         companyLogo.layer.borderColor = UIColor.JobPlanet.gray3.cgColor
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm'Z'"
     }
     
     func configureCell(with data: CellList) {
@@ -41,7 +44,9 @@ class CompanyCollectionViewCell: UICollectionViewCell {
         companyIndustryName.text = data.industryName
         companySalaryAverage.text = "\(data.salaryAvg)".makeComma
         reviewSummery.text = data.reviewSummary
-        reviewUpdateDate.text = data.updateDate
         intervewQuestion.text = data.interviewQuestion
+
+        guard let date = formatter.date(from: data.updateDate) else { return }
+        reviewUpdateDate.text = date.toString(dateFormat: "yyyy.MM.dd")
     }
 }

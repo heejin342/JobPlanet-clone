@@ -47,12 +47,12 @@ extension CellList {
     
     var cellData: AnyObject {
         switch self {
-        case .companyCell(let a):
-            return a as AnyObject
-        case .horizontalCell(let b):
-            return b as AnyObject
-        case .reviewCell(let c):
-            return c as AnyObject
+        case .companyCell(let companyCellData):
+            return companyCellData as AnyObject
+        case .horizontalCell(let horizontalCellData):
+            return horizontalCellData as AnyObject
+        case .reviewCell(let reviewCellData):
+            return reviewCellData as AnyObject
         }
     }
 }

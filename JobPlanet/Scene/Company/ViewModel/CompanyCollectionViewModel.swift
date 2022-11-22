@@ -10,20 +10,18 @@ import RxSwift
 import RxRelay
 
 class CompanyCollectionViewModel {
-    
-    var storeData: [CellList] = []
+ 
+    let service = CompanyService()
     let disposeBag = DisposeBag()
-    
-    var companyList: [CompanyCell] = []
     
     let cellData = BehaviorRelay<[CellList]>(value: [])
         
-    init() {
-        
-        NetworkManager<CellItems>(url: APIConstants.DYNAMIC_CELL_ITEMS, method: .get).fetch { data in
-            self.storeData = data.cellItems
-            self.cellData.accept(data.cellItems)
-        }
+    func getCellData() {
+        service.fetchRecruitData()
+            .subscribe { cellData in
+                self.cellData.accept(cellData.cellItems)
+            }
+            .disposed(by: disposeBag)
     }
     
 

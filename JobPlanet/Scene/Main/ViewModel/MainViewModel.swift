@@ -31,4 +31,9 @@ struct MainViewModel {
     mutating func getRecruitdata() {
         recruiteViewModel.getRecruitdata()
     }
+    
+    mutating func getCompanydata() {
+        companyViewViewModel.getCellData()
+    }
+
 }

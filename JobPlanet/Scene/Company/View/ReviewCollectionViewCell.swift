@@ -22,6 +22,8 @@ class ReviewCollectionViewCell: UICollectionViewCell {
     @IBOutlet var reviewPros: UILabel!
     @IBOutlet var reviewCons: UILabel!
     
+    let formatter = DateFormatter()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -29,6 +31,7 @@ class ReviewCollectionViewCell: UICollectionViewCell {
         companyLogo.layer.cornerRadius = 4
         companyLogo.layer.borderWidth = 1
         companyLogo.layer.borderColor = UIColor.JobPlanet.gray3.cgColor
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm'Z'"
     }
     
     func configureCell(with data: CellList) {
@@ -39,8 +42,10 @@ class ReviewCollectionViewCell: UICollectionViewCell {
         companyRate.text = "\(data.rateTotalAvg)"
         companyIndustryName.text = data.industryName
         reviewSummary.text = data.reviewSummary
-        reviewUpdateDate.text = data.updateDate
         reviewPros.text = data.pros
         reviewCons.text = data.cons
+        
+        guard let date = formatter.date(from: data.updateDate) else { return }
+        reviewUpdateDate.text = date.toString(dateFormat: "yyyy.MM.dd")
     }
 }

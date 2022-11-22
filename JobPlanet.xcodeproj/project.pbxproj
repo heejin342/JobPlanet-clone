@@ -34,6 +34,7 @@
 		F08D338C292D0086001247FD /* InsetVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D338B292D0086001247FD /* InsetVariables.swift */; };
 		F08D338E292D15D8001247FD /* RecruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D338D292D15D8001247FD /* RecruitService.swift */; };
 		F08D3392292D1D1B001247FD /* CompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3391292D1D1B001247FD /* CompanyService.swift */; };
+		F08D3394292D2411001247FD /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08D3393292D2411001247FD /* Date+Extension.swift */; };
 		F0B926282928C5FA005D75F2 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */; };
 		F0B9262B2928C8CB005D75F2 /* TabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B926292928C8CB005D75F2 /* TabHeaderView.swift */; };
 		F0B9262C2928C8CB005D75F2 /* TabHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0B9262A2928C8CB005D75F2 /* TabHeaderView.xib */; };
@@ -79,6 +80,7 @@
 		F08D338B292D0086001247FD /* InsetVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetVariables.swift; sourceTree = "<group>"; };
 		F08D338D292D15D8001247FD /* RecruitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitService.swift; sourceTree = "<group>"; };
 		F08D3391292D1D1B001247FD /* CompanyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyService.swift; sourceTree = "<group>"; };
+		F08D3393292D2411001247FD /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		F0B926272928C5FA005D75F2 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		F0B926292928C8CB005D75F2 /* TabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHeaderView.swift; sourceTree = "<group>"; };
 		F0B9262A2928C8CB005D75F2 /* TabHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabHeaderView.xib; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				F0B926382928E5A0005D75F2 /* UIColor+Extension.swift */,
 				F07411122929FA180086B75E /* UIViewController+Extension.swift */,
 				F08D337A292BC74E001247FD /* String+Extension.swift */,
+				F08D3393292D2411001247FD /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -326,9 +329,9 @@
 		F0B9262F2928D6A6005D75F2 /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				F08264B32927CD030080C5AF /* Model */,
 				F08D3390292D1D01001247FD /* Service */,
 				F07410FD29293D2E0086B75E /* ViewModel */,
-				F08264B32927CD030080C5AF /* Model */,
 				F0B926312928E38C005D75F2 /* View */,
 			);
 			path = Company;
@@ -485,6 +488,7 @@
 				F07411092929E7D40086B75E /* RecruitViewController.swift in Sources */,
 				F07411032929BB0E0086B75E /* CompanyViewController+CollectionViewExtension.swift in Sources */,
 				F0B926392928E5A0005D75F2 /* UIColor+Extension.swift in Sources */,
+				F08D3394292D2411001247FD /* Date+Extension.swift in Sources */,
 				F08D3385292CEFE7001247FD /* MainViewModel.swift in Sources */,
 				F08D3379292BAC20001247FD /* HashTagView.swift in Sources */,
 				F08D337B292BC74E001247FD /* String+Extension.swift in Sources */,

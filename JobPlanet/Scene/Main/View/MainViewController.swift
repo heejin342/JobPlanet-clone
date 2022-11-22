@@ -102,7 +102,7 @@ class MainViewController: UIViewController {
     func moveDetail(data: RecruitList) {
         view.endEditing(true)
         guard let vc = instanceVC(name: RecruitDetailViewController.Id) as? RecruitDetailViewController else { return }
-        vc.data = data
+        vc.viewModel = data
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -120,6 +120,8 @@ class MainViewController: UIViewController {
     
     func makeCompanyTab() {
         viewModel.companyView = instanceVC(name: CompanyViewController.Id) as? CompanyViewController
+        viewModel.getCompanydata()
+        
         viewModel.companyView?.viewModel = viewModel.companyViewViewModel
         guard let companyView = viewModel.companyView else {return}
         companyView.transitionDelagate = self
