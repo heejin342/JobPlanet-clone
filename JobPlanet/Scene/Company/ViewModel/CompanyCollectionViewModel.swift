@@ -15,14 +15,24 @@ class CompanyCollectionViewModel {
     let disposeBag = DisposeBag()
     
     let cellData = BehaviorRelay<[CellList]>(value: [])
-        
+     
+    init() {
+        getCellData()
+    }
+    
     func getCellData() {
-        service.fetchRecruitData()
+        service.fetchCompanyData()
             .subscribe { cellData in
                 self.cellData.accept(cellData.cellItems)
             }
             .disposed(by: disposeBag)
     }
     
-
+    func getCompanyCellData() -> [CompanyCell] {
+        return service.storedCompanyData
+    }
+    
+    func getTotalCellData() -> [CellList] {
+        return service.storedData
+    }
 }

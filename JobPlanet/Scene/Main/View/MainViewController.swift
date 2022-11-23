@@ -132,8 +132,6 @@ class MainViewController: UIViewController {
     
     func makeCompanyTab() {
         viewModel.companyView = instanceVC(name: CompanyViewController.Id) as? CompanyViewController
-        viewModel.getCompanydata()
-        
         viewModel.companyView?.viewModel = viewModel.companyViewViewModel
         guard let companyView = viewModel.companyView else {return}
         companyView.transitionDelagate = self
