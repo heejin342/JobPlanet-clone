@@ -18,6 +18,13 @@ class CompanyViewController: UIViewController {
     
     var transitionDelagate: CellAction?
 
+    lazy var emptyLabel: UILabel = {
+        let label = UILabel()
+        label.text = "검색 결과가 없어요!"
+        label.isHidden = true
+        return label
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,13 +39,14 @@ class CompanyViewController: UIViewController {
     func bindView() {
         viewModel?.cellData
             .asDriver()
-            .drive(onNext: {_ in
-                self.updateView()
+            .drive(onNext: { data in
+                self.updateView(dataCount: data.count)
             })
             .disposed(by: disposeBag)
     }
     
-    func updateView() {
+    func updateView(dataCount: Int) {
+        emptyLabel.isHidden = dataCount == 0 ? false : true
         self.jobCollectionView.reloadData()
     }
     
@@ -52,6 +60,14 @@ class CompanyViewController: UIViewController {
         jobCollectionView.collectionViewLayout = flowLayout
 
         registerNib()
+        addView()
+    }
+    
+    func addView() {
+        jobCollectionView.addSubview(emptyLabel)
+        emptyLabel.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
     }
     
     func registerNib() {
